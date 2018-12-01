@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!--
-    Fifa Team Decider, HTML Version
+    FIFA Team Decider, HTML Version
     Created by Jacob Hagenbaugh
     Created on Nov. 30th, 2018
 -->
@@ -12,14 +12,23 @@
         <script src="script.js"></script> 
     </head>
     <body>
-        <div>TODO write content</div>
+        
         <div>
-            <input id="player1-input" type="text" />
-            <input id="player2-input" type="text" />
-            <br>
             <script>
-                document.write(randomTeamGen() + "<br>" + randomTeamGen());
+                document.write(randomTeamGen() + "<br>");
+                document.write(randomTeamGen());
             </script>
         </div>
+        <br>
+        <div>
+            <form>
+                Player 1 : <input id="player1-input" type="text" /><br>
+                Player 2 : <input id="player2-input" type="text" />
+            </form>
+            <input type="submit" onclick="getPlayers();">
+            <p>Player 1 : <span id='player1'></span></p>
+            <p>Player 2 : <span id='player2'></span></p>   
+        </div>
+        
     </body>
 </html>
