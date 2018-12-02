@@ -12,7 +12,6 @@
         <script src="script.js"></script> 
     </head>
     <body>
-        
         <div>
             <script>
                 document.write(randomTeamGen() + "<br>");
@@ -26,9 +25,21 @@
                 Player 2 : <input id="player2-input" type="text" />
             </form>
             <input type="submit" onclick="getPlayers();">
-            <p>Player 1 : <span id='player1'></span></p>
+            <!-- <p>Player 1 : <span id='player1'></span></p> -->
             <p>Player 2 : <span id='player2'></span></p>   
         </div>
-        
+        <br>
+        <div>
+            <p><span id='player1'></span> will play as: 
+            <script>
+                document.write(randomTeamGen());
+            </script>
+            </p>
+        </div>
+        <div>
+            <script>
+                document.write(player2 + " will play as " + randomTeamGen() + ".");
+            </script>
+        </div>
     </body>
 </html>
