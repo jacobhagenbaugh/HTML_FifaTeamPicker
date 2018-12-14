@@ -14,11 +14,23 @@ var player1 = document.getElementById("player1-input").value;
 var player2 = document.getElementById("player2-input").value;
 
 function getPlayers() {
-    document.getElementById('player1').innerHTML = 
-        document.getElementById("player1-input").value 
-        + " is Player 1, he will play as: " + randomTeamGen();
+    if(document.getElementById("player1-input").value.length === 0)
+    {
+        document.getElementById('player1').innerHTML =
+            "Player 1's name must be submitted.";
+    }
+    else if(document.getElementById("player2-input").value.length === 0)
+    {
+        document.getElementById('player1').innerHTML =
+            "Player 2's name must be submitted.";
+    }
+    else {
+        document.getElementById('player1').innerHTML = 
+            document.getElementById("player1-input").value 
+            + " is Player 1, he will play as: " + randomTeamGen();
 
-    document.getElementById('player2').innerHTML = 
-        document.getElementById("player2-input").value 
-        + " is Player 2, he will play as: " + randomTeamGen();
+        document.getElementById('player2').innerHTML = 
+            document.getElementById("player2-input").value 
+            + " is Player 2, he will play as: " + randomTeamGen();
+    }
 }
