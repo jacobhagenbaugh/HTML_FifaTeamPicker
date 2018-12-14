@@ -6,40 +6,30 @@
 -->
 <html>
     <head>
+        <link rel="stylesheet" href="style.css" type="text/css"/>
+
         <title>Fifa Team Decider</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="script.js"></script> 
     </head>
     <body>
-        <div>
-            <script>
-                document.write(randomTeamGen() + "<br>");
-                document.write(randomTeamGen());
-            </script>
+        <div class="heading">
+            <h1>FIFA Team Picker</h1>
         </div>
-        <br>
-        <div>
+        <div class="input">
             <form>
-                Player 1 : <input id="player1-input" type="text" /><br>
-                Player 2 : <input id="player2-input" type="text" />
+                <label>Player 1 : </label><input id="player1-input" type="text" /><br>
+                <label>Player 2 : </label><input id="player2-input" type="text" />
             </form>
-            <input type="submit" onclick="getPlayers();">
+            <input class="input-button" type="submit" onclick="getPlayers();">
             <!-- <p>Player 1 : <span id='player1'></span></p> -->
-            <p>Player 2 : <span id='player2'></span></p>   
         </div>
         <br>
-        <div>
-            <p><span id='player1'></span> will play as: 
-            <script>
-                document.write(randomTeamGen());
-            </script>
-            </p>
+        <div class="output">
+                <span id='player1'></span><br>
+                <span id='player2'></span>
         </div>
-        <div>
-            <script>
-                document.write(player2 + " will play as " + randomTeamGen() + ".");
-            </script>
-        </div>
+
     </body>
 </html>

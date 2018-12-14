@@ -15,7 +15,10 @@ var player2 = document.getElementById("player2-input").value;
 
 function getPlayers() {
     document.getElementById('player1').innerHTML = 
-        document.getElementById("player1-input").value;
+        document.getElementById("player1-input").value 
+        + " is Player 1, he will play as: " + randomTeamGen();
+
     document.getElementById('player2').innerHTML = 
-        document.getElementById("player2-input").value;
+        document.getElementById("player2-input").value 
+        + " is Player 2, he will play as: " + randomTeamGen();
 }
