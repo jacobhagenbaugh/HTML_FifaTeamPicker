@@ -12,11 +12,12 @@ body {
 .output {
     color: #7FDBFF;
     font-size: 20px;
+    text-align: center;
 }
 
 .input {
     color: white;
-    width: 600px;
+    width: 100%;
     display: flex;
     justify-content: center;
 }
@@ -46,4 +47,15 @@ body {
 
 .heading p {
     background-color: darkslategray;
+}
+
+.refresh-button {
+    background-color: darkslategray;
+    border: none;
+    text-decoration: none;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 20px;
+    text-align: center;
 }
